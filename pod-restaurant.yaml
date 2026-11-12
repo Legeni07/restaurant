@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: darknithadiene-restaurant-pod
+  labels:
+    app: restaurant
+spec:
+  containers:
+  - name: restaurant-container
+    image: darknithadiene/restaurant:latest
+    ports:
+    - containerPort: 80
